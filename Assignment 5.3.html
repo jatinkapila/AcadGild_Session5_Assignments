@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student</title>
+</head>
+<body>
+	<h1>Welcome to student Details</h1>
+
+	<div id="demo">
+		
+
+	</div>
+	<script>
+    var student={
+    	studentname:"Vikas Khanna",
+    	DOB:"14 Nov 1971",
+    	Skill:"chef",
+    	
+    	address:{
+    		state:"newyork",
+    		city:"newyork city",
+    		country:"US",
+    		pin_code:10029
+
+    	},
+    	printdetails:function()
+    	{
+            return this.studentname+ ".." +this.DOB+ "..." +this.Skill;  
+    	}
+    };
+     
+       student.eyecolor="brown";
+       student.mothername="Bindu";
+
+        console.log(student);
+
+
+  delete student.mothername;
+  console.log(student);
+
+      console.log(student.printdetails());
+      document.write(student.printdetails(),"<br>");
+      console.log(student.address.city);
+  console.log("========================")
+    for(var key in student)
+    {
+    	console.log(student[key]);
+    }
+	</script>
+</body>
+</html>
